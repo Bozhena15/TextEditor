@@ -6,7 +6,34 @@
         xmlns:local="clr-namespace:TextEditor"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+            <ToggleButton x:Name="btnCreate" ToolTip="Create File">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\create_file.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ToggleButton x:Name="btnOpen" ToolTip="Open File">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\open_file.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ToggleButton x:Name="btnExport" ToolTip="Export File">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\export_file.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ComboBox x:Name="cmbFontFamily" Width="200px" ToolTip="Font Family"/>
+            <ComboBox x:Name="cmbFontSize" Width="40px" ToolTip="Font Size"/>
+            <ToggleButton x:Name="btnBold" ToolTip="Bold">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\bold.jpg" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ToggleButton x:Name="btnItalic" ToolTip="Italic">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\italic.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ToggleButton x:Name="btnUnderLine" ToolTip="Underline">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\underline.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ToggleButton x:Name="insertImg" ToolTip="Insert Image">
+                <Image Source="C:\Users\Arsen\Source\Repos\TextEditor\TextEditor\img\insertImage.png" Width="15px" Height="15px"/>
+            </ToggleButton>
+            <ComboBox x:Name="cmbList" Width="40px" ToolTip="List"/>
+            <TextBox x:Name="fileSearch" Text="File Search" Width="200px"/>
+        </ToolBar>
+        <RichTextBox x:Name="richTextBox"/>
+    </DockPanel>
 </Window>
