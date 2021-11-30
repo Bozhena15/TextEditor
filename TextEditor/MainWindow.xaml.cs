@@ -13,5 +13,11 @@ namespace TextEditor
         {
             InitializeComponent();
         }
+
+        private void btnExport_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFile saveFile = new SaveFile(textBox.Text);
+            saveFile.Show();
+        }
     }
 }

@@ -14,7 +14,7 @@
             <ToggleButton x:Name="btnOpen" ToolTip="Open File">
                 <Image Source="img\open_file.png" Width="15px" Height="15px"/>
             </ToggleButton>
-            <ToggleButton x:Name="btnExport" ToolTip="Export File">
+            <ToggleButton x:Name="btnExport" ToolTip="Export File" Click="btnExport_Click">
                 <Image Source="img\export_file.png" Width="15px" Height="15px"/>
             </ToggleButton>
             <ComboBox x:Name="cmbFontFamily" Width="200px" ToolTip="Font Family"/>
@@ -34,6 +34,6 @@
             <ComboBox x:Name="cmbList" Width="40px" ToolTip="List"/>
             <TextBox x:Name="fileSearch" Text="File Search" Width="200px"/>
         </ToolBar>
-        <RichTextBox x:Name="richTextBox"/>
+        <TextBox x:Name="textBox"/>
     </DockPanel>
 </Window>
