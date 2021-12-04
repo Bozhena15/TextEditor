@@ -4,7 +4,7 @@ using System.IO;
 using System.Windows;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TextEditor2
+namespace TextEditor
 {
     /// <summary>
     /// Interaction logic for CreateFile.xaml
