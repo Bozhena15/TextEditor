@@ -32,7 +32,8 @@
                 <Image Source="img\insertImage.png" Width="15px" Height="15px"/>
             </ToggleButton>
             <ComboBox x:Name="cmbList" Width="40px" ToolTip="List"/>
-            <TextBox x:Name="fileSearch" Text="File Search" Width="200px"/>
+            <TextBox x:Name="fileSearch" Width="200px"/>
+            <Button x:Name="Search" Content="Search" Click="Search_Click" />
         </ToolBar>
         <TextBox x:Name="textBox"/>
     </DockPanel>

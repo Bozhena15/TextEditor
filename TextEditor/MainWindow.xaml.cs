@@ -19,5 +19,18 @@ namespace TextEditor
             SaveFile saveFile = new SaveFile(textBox.Text);
             saveFile.Show();
         }
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox.Text.Contains(fileSearch.Text))
+            {
+                var index = textBox.Text.ToLower().IndexOf(fileSearch.Text.ToLower());
+                textBox.Select(index, fileSearch.Text.Length);
+            }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }
