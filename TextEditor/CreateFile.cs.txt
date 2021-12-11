@@ -1,0 +1,32 @@
+using Microsoft.Win32;
+using System.IO;
+using System.Windows;
+
+namespace TextEditor
+{
+    /// <summary>
+    /// Interaction logic for CreateFile.xaml
+    /// </summary>
+    public partial class CreateFile : Window
+    {
+        private string _content;
+
+        public CreateFile(string content)
+        {
+            InitializeComponent();
+
+            _content = content;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog createFile = new OpenFileDialog()
+            {
+                FileName = $"Name{extension.Text}",
+            };
+
+            if (createFile.ShowDialog() == true)
+                File.WriteAllText(createFile.FileName, _content);
+        }
+    }
+}
